@@ -49,19 +49,16 @@ for (var i=0; i<blockchain.length; i++) {
 }
 return balance
 }
-
 let names=[]
 for (let j=0; j<3; j++){
     names.push(blockchain[j].toUser);
 }
-
 let names2 = names.map(function (x) {
   return x.charAt(0).toUpperCase() + x.slice(1)
 });
 for (let k=0; k<names2.length; k++){
     console.log(names2[k] + "'s KelloggCoin balance is " + getBalance(names[k]))
 }
-
 //End of GN code
 // It should print out:
 // Brian's KelloggCoin balance is 8000
